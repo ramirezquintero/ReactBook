@@ -3,9 +3,19 @@ import * as ReactDOM from "react-dom/client";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <button title="My Button" foo="bar">
-    My Button
-    </button>
+  <section>
+    <header>
+      <h1>A Header</h1>
+    </header>
+    <nav>
+      <a href="item">Nav Item</a>
+    </nav>
+    <main>
+      <p>The main content...</p>
+    </main>
+    <footer>
+      <small>&copy; 2025</small>
+    </footer>
+  </section>
 );
 
-root.render(<Button />);
