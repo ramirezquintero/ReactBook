@@ -1,21 +1,15 @@
 import * as ReactDOM from "react-dom/client";
 
+function MyComponent() {
+  return(
+    <section>
+      <h1>My Component</h1>
+      <p>This is where the component content would go</p>
+    </section>
+  )
+}
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(
-  <section>
-    <header>
-      <h1>A Header</h1>
-    </header>
-    <nav>
-      <a href="item">Nav Item</a>
-    </nav>
-    <main>
-      <p>The main content...</p>
-    </main>
-    <footer>
-      <small>&copy; 2025</small>
-    </footer>
-  </section>
-);
+root.render(<MyComponent />);
 
