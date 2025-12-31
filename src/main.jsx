@@ -1,22 +1,15 @@
 import * as ReactDOM from "react-dom/client";
 
-import MySection from "./MySection.jsx"
-import MyButton from "./MyButton.jsx";
-
-function MyComponent() {
-  return(
-    <section>
-      <h1>My Component</h1>
-      <p>This is where the component content would go</p>
-    </section>
-  )
-}
+const enabled = false;
+const text = "A button";
+const placeholder = "Please input a value";
+const size = 50;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <MySection>
-    <MyButton>This is the button</MyButton>
-  </MySection>
+  <section>
+    <button disabled = {! enabled}>{text}</button>
+    <input placeholder = {placeholder} size = {size} />
+  </section>
 );
-
