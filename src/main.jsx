@@ -1,18 +1,16 @@
 import * as ReactDOM from "react-dom/client";
+import { useState } from "react";
 
-var clicked = 0; 
-
-const handleClick= () => {
-  clicked++;
-  console.log("Button clicked")
-  console.log(clicked)
-};
+const enabled = false;
+const text = "A Button";
+const placeholder = "Please input something";
+const size = 50;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <section>
-    <button onClick={handleClick}>Click me</button>
-    <p>times clicked: {clicked}</p>
+    <button disabled={!enabled}>{text}</button>
+    <input placeholder={placeholder} size={size} />
   </section>
-)
+);
